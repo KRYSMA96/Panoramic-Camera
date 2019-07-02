@@ -1,2 +1,2 @@
 # Panoramic-Camera
-competition
+For Fun
