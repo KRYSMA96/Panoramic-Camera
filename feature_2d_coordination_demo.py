@@ -6,7 +6,7 @@ WIDTH = 640
 HEIGHT = 480
 
 
-def parse_yaml_from_name(param_name, yaml_path='calibration.yaml'):
+def parse_yaml_from_name(param_name, yaml_path='/home/xburner/桌面/Smart_city_imgTest/calibration.yaml'):
     ''' 解析相机标定参数文件 '''
 
     with open(yaml_path, encoding='utf=8', mode='r') as conf:
@@ -22,7 +22,7 @@ def parse_yaml_from_name(param_name, yaml_path='calibration.yaml'):
 
 
 if __name__ == '__main__':
-    img1 = cv2.imread('origin_1.jpg')
+    img1 = cv2.imread('/home/xburner/桌面/2.jpg')#drive/smart_city/train_data/scene1_jiading_lib_training/PIC_20190522_100025/origin_1.jpg
     resize_img = cv2.resize(img1, (WIDTH, HEIGHT), cv2.INTER_LINEAR)
 
     intrimatrix = parse_yaml_from_name('intri_camera1')
