@@ -1,2 +1,2 @@
 # Panoramic-Camera
-For Fun
+全景相机定位
